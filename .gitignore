@@ -1,0 +1,6 @@
+/builds/
+/*.o
+/*.out
+*.exe
+.vscode/
+.idea/
