@@ -1,0 +1,11 @@
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/CMakeFiles/edit_cache.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/CMakeFiles/rebuild_cache.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/core/CMakeFiles/tscore.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/core/CMakeFiles/edit_cache.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/core/CMakeFiles/rebuild_cache.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/cli/CMakeFiles/tsengine.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/cli/CMakeFiles/edit_cache.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/cli/CMakeFiles/rebuild_cache.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/tests/CMakeFiles/ts_tests.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/tests/CMakeFiles/edit_cache.dir
+C:/Users/admin/OneDrive/Desktop/Projects_CPP/QDWannaB/tsengine/build/tests/CMakeFiles/rebuild_cache.dir
