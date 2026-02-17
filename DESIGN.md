@@ -64,3 +64,8 @@ This approach is intentionally minimal and will be revisited in later versions.
 1. Extended statistical methods
 2. Multiple data field support
 3. Improved command parsers and validators
+
+## Version 0.2 Scope
+
+1. REPL mode
+2. Improved Parsers
