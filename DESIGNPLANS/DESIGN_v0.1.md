@@ -59,8 +59,8 @@ This prioritizes build correctness and clarity over flexibility.
 
 This approach is intentionally minimal and will be revisited in later versions.
 
-
 ### Expectations for v0.2
+
 1. Extended statistical methods
 2. Multiple data field support
 3. Improved command parsers and validators
