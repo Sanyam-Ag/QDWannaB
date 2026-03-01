@@ -3,7 +3,11 @@
 #include "help_command.hpp"
 #include "mean_command.hpp"
 #include "variance_command.hpp"
-#include "data/timeseries.hpp"
+#include "stddev_command.hpp"
+#include "min_command.hpp"
+#include "max_command.hpp"
+#include "count_command.hpp"
+#include "timeseries.hpp"
 #include <iostream>
 #include <sstream>
 
@@ -13,6 +17,11 @@ namespace cli{
         registry_.register_command(std::make_unique<HelpCommand>(registry_));
         registry_.register_command(std::make_unique<MeanCommand>());
         registry_.register_command(std::make_unique<VarianceCommand>());
+        registry_.register_command(std::make_unique<StddevCommand>());
+        registry_.register_command(std::make_unique<MinCommand>());
+        registry_.register_command(std::make_unique<MaxCommand>());
+        registry_.register_command(std::make_unique<CountCommand>());
+
 
         TimeSeries ts1({1.0, 2.0, 3.0});
         TimeSeries ts2({10.0, 20.0, 30.0});

@@ -1,7 +1,7 @@
 #pragma once
 #include "command_registry.hpp"
 #include "parser.hpp"
-#include "data/dataset.hpp"
+#include "dataset.hpp"
 
 namespace cli{
     class REPL{

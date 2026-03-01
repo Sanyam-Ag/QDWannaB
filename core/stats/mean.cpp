@@ -1,4 +1,4 @@
-#include "stats/mean.hpp"
+#include "mean.hpp"
 #include <stdexcept>
 
 double mean(const TimeSeries& ts){

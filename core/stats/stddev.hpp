@@ -1,4 +1,4 @@
 #pragma once
 #include "timeseries.hpp"
 
-double mean(const TimeSeries& ts);
+double stddev(const TimeSeries& ts);

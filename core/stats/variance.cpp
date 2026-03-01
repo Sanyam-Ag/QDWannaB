@@ -1,5 +1,5 @@
-#include "stats/mean.hpp"
-#include "stats/variance.hpp"
+#include "mean.hpp"
+#include "variance.hpp"
 
 double variance(const TimeSeries& ts){
     const auto& v = ts.values();

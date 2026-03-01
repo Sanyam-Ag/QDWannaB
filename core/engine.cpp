@@ -33,3 +33,19 @@ double Engine::mean(const TimeSeries& ts) {
 double Engine::variance(const TimeSeries& ts) {
     return ::variance(ts);
 }
+
+double Engine::stddev(const TimeSeries& ts) {
+    return ::stddev(ts);
+}
+
+double Engine::min(const TimeSeries& ts) {
+    return ::min(ts);
+}
+
+double Engine::max(const TimeSeries& ts) {
+    return ::max(ts);
+}
+
+double Engine::count(const TimeSeries& ts) {
+    return ::count(ts);
+}

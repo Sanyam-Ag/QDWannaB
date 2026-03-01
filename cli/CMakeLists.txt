@@ -9,7 +9,7 @@ add_executable(tsengine
 target_include_directories(tsengine PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/commands
-    ${CMAKE_CURRENT_SOURCE_DIR}/commands/stats
+    ${CMAKE_CURRENT_SOURCE_DIR}/commands/stats_command
 )
 
 target_link_libraries(tsengine PRIVATE tscore)

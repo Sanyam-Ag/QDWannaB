@@ -1,7 +1,10 @@
 #pragma once
-#include "data/timeseries.hpp"
-#include "stats/mean.hpp"
-#include "stats/variance.hpp"
+#include "timeseries.hpp"
+#include "mean.hpp"
+#include "variance.hpp"
+#include "stddev.hpp"
+#include "minmax.hpp"
+#include "count.hpp"
 #include <string>
 
 namespace core{
@@ -11,5 +14,9 @@ namespace core{
 
         static double mean(const TimeSeries& ts);
         static double variance(const TimeSeries& ts);
+        static double stddev(const TimeSeries& ts);
+        static double min(const TimeSeries& ts);
+        static double max(const TimeSeries& ts);
+        static double count(const TimeSeries& ts);
     };
 }

@@ -1,4 +1,4 @@
 #pragma once
-#include "data/timeseries.hpp"
+#include "timeseries.hpp"
 
 double variance(const TimeSeries& ts);
