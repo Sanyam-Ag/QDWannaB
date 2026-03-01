@@ -6,5 +6,5 @@ double stddev(const TimeSeries& ts){
     const auto& v = ts.values();
     double stddev_ts = std::sqrt(variance(ts));
 
-    return stddev_ts/static_cast<double>(v.size());
+    return stddev_ts;
 }
