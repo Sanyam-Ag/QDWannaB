@@ -1,6 +1,7 @@
 #pragma once
 #include "command_registry.hpp"
 #include "parser.hpp"
+#include "data/dataset.hpp"
 
 namespace cli{
     class REPL{
@@ -11,5 +12,6 @@ namespace cli{
         private:
             CommandRegistry registry_;
             Parser parser_;
+            core::Dataset dataset_;
     };
 }

@@ -1,5 +1,6 @@
 add_library(tscore
     data/timeseries.cpp
+    data/dataset.cpp
     stats/mean.cpp
     stats/variance.cpp
     engine.cpp

@@ -1,6 +1,7 @@
 #include "repl.hpp"
 #include "exit_command.hpp"
 #include "help_command.hpp"
+#include "data/timeseries.hpp"
 #include <iostream>
 #include <sstream>
 
@@ -8,6 +9,12 @@ namespace cli{
     REPL::REPL(){
         registry_.register_command(std::make_unique<ExitCommand>());
         registry_.register_command(std::make_unique<HelpCommand>(registry_));
+
+        TimeSeries ts1({1.0, 2.0, 3.0});
+        TimeSeries ts2({10.0, 20.0, 30.0});
+
+        dataset_.add_column("prices.close", ts1);
+        dataset_.add_column("prices.volume", ts2);
 
     }
 

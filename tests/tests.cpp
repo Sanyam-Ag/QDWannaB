@@ -5,9 +5,11 @@
 void test_timeseries();
 void test_variance();
 void test_mean();
+void test_dataset();
 
 int main() {
     test_timeseries();
     test_mean();
     test_variance();
+    test_dataset();
 }
