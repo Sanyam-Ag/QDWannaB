@@ -1,6 +1,8 @@
 #include "repl.hpp"
 #include "exit_command.hpp"
 #include "help_command.hpp"
+#include "mean_command.hpp"
+#include "variance_command.hpp"
 #include "data/timeseries.hpp"
 #include <iostream>
 #include <sstream>
@@ -9,6 +11,8 @@ namespace cli{
     REPL::REPL(){
         registry_.register_command(std::make_unique<ExitCommand>());
         registry_.register_command(std::make_unique<HelpCommand>(registry_));
+        registry_.register_command(std::make_unique<MeanCommand>());
+        registry_.register_command(std::make_unique<VarianceCommand>());
 
         TimeSeries ts1({1.0, 2.0, 3.0});
         TimeSeries ts2({10.0, 20.0, 30.0});
@@ -40,7 +44,7 @@ namespace cli{
                     continue;
                 }
 
-                cmd->execute(parsed.args);
+                cmd->execute(context_, parsed.args);
             }
             catch (const std::runtime_error& e){
                 if (std::string(e.what()) == "exit"){

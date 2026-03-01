@@ -4,10 +4,12 @@
 #include "stats/variance.hpp"
 #include <string>
 
-class Engine {
-public:
-    TimeSeries load(const std::string& path, const std::string& column);
+namespace core{
+    class Engine {
+    public:
+        TimeSeries load(const std::string& path, const std::string& column);
 
-    double mean(const TimeSeries& ts);
-    double variance(const TimeSeries& ts);
-};
+        static double mean(const TimeSeries& ts);
+        static double variance(const TimeSeries& ts);
+    };
+}

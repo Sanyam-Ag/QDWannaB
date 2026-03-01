@@ -3,6 +3,8 @@
 #include<sstream>
 #include<stdexcept>
 
+using namespace core;
+
 TimeSeries Engine::load(const std::string& path, const std::string& column){
     std::ifstream file(path);
     if(!file.is_open()){

@@ -15,7 +15,7 @@ namespace cli{
                 return "List available commands";
             }
 
-            void execute(const std::vector<std::string>&) override{
+            void execute(Context& ctx, std::vector<std::string>& args) override{
                 auto commands = registry_.list();
                 for (auto* cmd : commands){
                     std::cout << cmd->name() << " - "

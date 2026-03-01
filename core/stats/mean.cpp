@@ -1,13 +1,13 @@
-#include"stats/mean.hpp"
-#include<stdexcept>
+#include "stats/mean.hpp"
+#include <stdexcept>
 
-double mean(const TimeSeries &ts){
-    const auto &val = ts.values();
+double mean(const TimeSeries& ts){
+    const auto& v = ts.values();
     double sum = 0.0;
 
-    for(auto x : val){
+    for (double x : v){
         sum += x;
     }
 
-    return sum/static_cast<double>(ts.size());
+    return sum / static_cast<double>(v.size());
 }

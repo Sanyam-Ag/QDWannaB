@@ -13,5 +13,6 @@ namespace cli{
             CommandRegistry registry_;
             Parser parser_;
             core::Dataset dataset_;
+            cli::Context context_{dataset_};
     };
 }
