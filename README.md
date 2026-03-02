@@ -1,5 +1,7 @@
 # QDWannaB
 
+This is a small statistical engine project created with inspiration for multiple similar engines present publicly.
+
 ## Cmake Build Commands
 
 ```Inside tsengine:
@@ -8,6 +10,7 @@
 > cmake ..
 > cmake --build .
 > cli\tsengine.exe
+> tests\ts_tests.exe
 ```
 
 ## Dependency of Architecture
@@ -22,3 +25,6 @@
 2. Variance
 3. Standard Deviation
 4. Min & Max
+5. Count
+6. Covariance
+7. Correlation
