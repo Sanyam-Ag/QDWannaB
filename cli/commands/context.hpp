@@ -3,6 +3,6 @@
 
 namespace cli{
     struct Context{
-        core::Dataset& dataset;
+        core::Dataset dataset;
     };
 }

@@ -1,4 +1,5 @@
 #include "repl.hpp"
+#include "load_command.hpp"
 #include "exit_command.hpp"
 #include "help_command.hpp"
 #include "mean_command.hpp"
@@ -15,6 +16,7 @@
 
 namespace cli{
     REPL::REPL(){
+        registry_.register_command(std::make_unique<LoadCommand>());
         registry_.register_command(std::make_unique<ExitCommand>());
         registry_.register_command(std::make_unique<HelpCommand>(registry_));
         registry_.register_command(std::make_unique<MeanCommand>());
@@ -26,11 +28,11 @@ namespace cli{
         registry_.register_command(std::make_unique<CovarianceCommand>());
         registry_.register_command(std::make_unique<CorrelationCommand>());
 
-        TimeSeries ts1({1.0, 2.0, 3.0});
-        TimeSeries ts2({10.0, 20.0, 30.0});
+        //TimeSeries ts1({1.0, 2.0, 3.0});
+        //TimeSeries ts2({10.0, 20.0, 30.0});
 
-        dataset_.add_column("prices.close", ts1);
-        dataset_.add_column("prices.volume", ts2);
+        //dataset_.add_column("prices.close", ts1);
+        //dataset_.add_column("prices.volume", ts2);
 
     }
 

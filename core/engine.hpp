@@ -11,16 +11,14 @@
 
 namespace core{
     class Engine {
-    public:
-        TimeSeries load(const std::string& path, const std::string& column);
-
-        static double mean(const TimeSeries& ts);
-        static double variance(const TimeSeries& ts);
-        static double stddev(const TimeSeries& ts);
-        static double min(const TimeSeries& ts);
-        static double max(const TimeSeries& ts);
-        static double count(const TimeSeries& ts);
-        static double covariance(const TimeSeries& tsx, const TimeSeries& tsy);
-        static double correlation(const TimeSeries& tsx, const TimeSeries& tsy);
-    };
+        public:
+            static double mean(const TimeSeries& ts);
+            static double variance(const TimeSeries& ts);
+            static double stddev(const TimeSeries& ts);
+            static double min(const TimeSeries& ts);
+            static double max(const TimeSeries& ts);
+            static double count(const TimeSeries& ts);
+            static double covariance(const TimeSeries& tsx, const TimeSeries& tsy);
+            static double correlation(const TimeSeries& tsx, const TimeSeries& tsy);
+        };
 }

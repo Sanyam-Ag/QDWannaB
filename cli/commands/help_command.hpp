@@ -17,7 +17,7 @@ namespace cli{
 
             void execute(Context& ctx, std::vector<std::string>& args) override{
                 auto commands = registry_.list();
-                std::cout << "Command\t\t - Description\n";
+                std::cout << "Command\t\t - Description\n\n";
                 for (auto* cmd : commands){
                     std::cout << cmd->name() << "\t\t - "
                             << cmd->help() << "\n";
