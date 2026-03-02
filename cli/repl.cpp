@@ -7,6 +7,8 @@
 #include "min_command.hpp"
 #include "max_command.hpp"
 #include "count_command.hpp"
+#include "covariance_command.hpp"
+#include "correlation_command.hpp"
 #include "timeseries.hpp"
 #include <iostream>
 #include <sstream>
@@ -21,7 +23,8 @@ namespace cli{
         registry_.register_command(std::make_unique<MinCommand>());
         registry_.register_command(std::make_unique<MaxCommand>());
         registry_.register_command(std::make_unique<CountCommand>());
-
+        registry_.register_command(std::make_unique<CovarianceCommand>());
+        registry_.register_command(std::make_unique<CorrelationCommand>());
 
         TimeSeries ts1({1.0, 2.0, 3.0});
         TimeSeries ts2({10.0, 20.0, 30.0});

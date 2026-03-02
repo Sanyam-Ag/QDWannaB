@@ -5,7 +5,7 @@
 namespace cli{
     class VarianceCommand : public Command{
     public:
-        std::string name() const override{ return "variance"; }
+        std::string name() const override{ return "var"; }
         std::string help() const override{ return "Returns variance of the dataset column"; }
 
         void execute(Context& ctx, std::vector<std::string>& args) override{

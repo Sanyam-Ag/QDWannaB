@@ -6,6 +6,8 @@ add_library(tscore
     stats/stddev.cpp
     stats/minmax.cpp
     stats/count.cpp
+    stats/covariance.cpp
+    stats/correlation.cpp
     engine.cpp
 )
 

@@ -5,6 +5,8 @@
 #include "stddev.hpp"
 #include "minmax.hpp"
 #include "count.hpp"
+#include "covariance.hpp"
+#include "correlation.hpp"
 #include <string>
 
 namespace core{
@@ -18,5 +20,7 @@ namespace core{
         static double min(const TimeSeries& ts);
         static double max(const TimeSeries& ts);
         static double count(const TimeSeries& ts);
+        static double covariance(const TimeSeries& tsx, const TimeSeries& tsy);
+        static double correlation(const TimeSeries& tsx, const TimeSeries& tsy);
     };
 }
