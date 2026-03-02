@@ -9,6 +9,7 @@ add_library(tscore
     stats/covariance.cpp
     stats/correlation.cpp
     engine.cpp
+    csv_loader.cpp
 )
 
 target_include_directories(tscore PUBLIC 
